@@ -38,8 +38,9 @@
 		<div class="header__top">
 			<a class="contact-link" href="tel:771146956" title="Zavolejte nám!"><img src="images/phone.svg" width="20" height="20" alt="phone">+420 771 146 956</a>
 			<a class="contact-link" href="mailto:info@mivela.cz" title="Napište nám!"><img src="images/envelope.svg" width="23" height="19" alt="e-mail">info@mivela.cz</a>
-			<a class="social-icon" href="#" title=""><img src="images/facebook.svg" width="19" height="19" alt="facebook"></a>
-			<a class="social-icon" href="#" title=""><img src="images/linkedin.svg" width="18" height="18" alt="linkedin"></a>
+			<a class="social-icon" href="https://www.facebook.com/mivelauklid/" target="_blank" title=""><img src="images/facebook.svg" width="19" height="19" alt="facebook"></a>
+			<a class="social-icon" href="https://www.instagram.com/mivelauklid/" target="_blank" title=""><img src="images/instagram.svg" width="19" height="19" alt="instagram"></a>
+			<a class="social-icon" href="https://www.linkedin.com/company/72462439/admin/" target="_blank" title=""><img src="images/linkedin.svg" width="18" height="18" alt="linkedin"></a>
 		</div>
 		<div class="header__bottom">
 			<a href="/" title="Mivela"><img src="images/logo.png" alt="logo"></a>
@@ -54,16 +55,27 @@
 					<li><a href="" title="">Kontakty</a></li>
 				</ul>
 			</nav>
+			<button type="button" class="togglenav__button js-nav">
+				<div class="togglenav__button-burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</button>
 		</div>
 	</div>
 </header>
 
 
 <div class="jumbo">
+    <img class="jumbo__img" src="images/tablet-bg.png" width="991" height="555" alt="">
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="body_1" width="2000" height="1200">
         <defs>
             <pattern id="pattern1" height="100%" width="100%" patternContentUnits="objectBoundingBox">
                 <image height="1" width="1" preserveAspectRatio="none" xlink:href="images/jumbo.jpg" />
+            </pattern>
+            <pattern id="pattern2" height="100%" width="100%" patternContentUnits="objectBoundingBox">
+                <image height="1" width="1" preserveAspectRatio="none" xlink:href="images/jumbo-smaller.jpg" />
             </pattern>
        </defs>
     <g transform="matrix(0.7499062 0 0 0.75 0 0)">
@@ -95,45 +107,45 @@
         <div class="services__wrapper">
             <div class="services__left">
                 <div class="services__left-wrapper">
-                    <div class="tile">
+                    <a href="#" class="tile">
                         <div class="tile__inner">
                             <h3 class="tile__title">ÚKLID BYTOVÝCH DOMŮ</h3>
                             <p class="tile__text">Integer malesuada etiam sapien elit, consequat eget tristique non...</p>
-                            <a class="btn btn--full btn--medium tile__button " href="" title="">od 1.500 Kč</a>
+                            <div class="btn btn--full btn--medium tile__button " href="" title="">od 1.500 Kč</div>
                         </div>
-                    </div>
-                    <div class="tile">
+                    </a>
+                    <a href="#" class="tile">
                         <div class="tile__inner">
                             <h3 class="tile__title">Úklid kancelář. prostor</h3>
                             <p class="tile__text">In enim a arcu imperdiet malesuada pallentesque pretium lectus turpis...</p>
-                            <a class="btn btn--full btn--medium tile__button " href="" title="">od 1.500 Kč</a>
+                            <div class="btn btn--full btn--medium tile__button " href="" title="">od 1.500 Kč</div>
                         </div>
-                    </div>
-                    <div class="tile">
+                    </a>
+                    <a href="#" class="tile">
                         <div class="tile__inner">
                             <h3 class="tile__title">Strojové čištění povrchů</h3>
                             <p class="tile__text">In enim a arcu imperdiet malesuada pallentesque pretium lectus turpis...</p>
-                            <a class="btn btn--full btn--medium tile__button " href="" title="">od 1.500 Kč</a>
+                            <div class="btn btn--full btn--medium tile__button " href="" title="">od 1.500 Kč</div>
                         </div>
-                    </div>
-                    <div class="tile">
+                    </a>
+                    <a href="#" class="tile">
                         <div class="tile__inner">
                             <h3 class="tile__title">Jednoráz. úklidy</h3>
                             <p class="tile__text">Etiam egestas wisi a erat proin pede, vulputate nec, fermentum fringilla, vehicula vitae...</p>
-                            <a class="btn btn--full btn--medium tile__button " href="" title="">od 1.500 Kč</a>
+                            <div class="btn btn--full btn--medium tile__button " href="" title="">od 1.500 Kč</div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <a class="btn btn--full btn--large" href="" title="">Nezávazná poptávka služeb</a>
             </div>
             <div class="services__right">
-                <div class="tile">
+                <a href="#" class="tile">
                     <div class="tile__inner">
                         <h3 class="tile__title">ÚKLID ZAŘÍZENÍ ZDRAVOTNÍCH A SOCIÁLNÍCH SLUŽEB</h3>
                         <p class="tile__text">Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui sed convallis magna eu sem vestibulum fermentum tortor...</p>
-                        <a class="btn btn--full btn--medium tile__button " href="" title="">od 1.500 Kč</a>
+                        <div class="btn btn--full btn--medium tile__button " href="" title="">od 1.500 Kč</div>
                     </div>
-                </div>
+                </a>
                 <div class="services__box">
                     <p class="services__subtitle">Další služby...</p>
                     <ul>
@@ -442,10 +454,10 @@
                         </div>
                     </div>
                     <div class="form__group form__group--full">
-                        <select>
-                            <option selected>Typ služby...</option>
-                            <option>Služba 1</option>
-                            <option>Služba 2</option>
+                        <select class="rev-select-box">
+                            <option selected value="hide">Typ služby...</option>
+                            <option value="Služba 1">Služba 1</option>
+                            <option value="Služba 2">Služba 2</option>
                         </select>
                     </div>
                     <div class="form__group form__group--full">
@@ -495,8 +507,9 @@
                 </div>
                 <div class="footer__right">
                     <div class="footer__icons">
-                        <a class="social-icon" href="#" title=""><img src="images/facebook.svg" width="19" height="19" alt="facebook"></a>
-        			    <a class="social-icon" href="#" title=""><img src="images/linkedin.svg" width="18" height="18" alt="linkedin"></a>
+                        <a class="social-icon" href="https://www.facebook.com/mivelauklid/" target="_blank" title=""><img src="images/facebook.svg" width="19" height="19" alt="facebook"></a>
+                        <a class="social-icon" href="https://www.instagram.com/mivelauklid/" target="_blank" title=""><img src="images/instagram.svg" width="19" height="19" alt="instagram"></a>
+        			    <a class="social-icon" href="https://www.linkedin.com/company/72462439/admin/" target="_blank" title=""><img src="images/linkedin.svg" width="18" height="18" alt="linkedin"></a>
                     </div>
                     <div class="footer__links">
                         <a class="contact-link" href="tel:771146956" title="Zavolejte nám!"><img src="images/phone.svg" width="20" height="20" alt="phone">+420 771 146 956</a>
@@ -521,6 +534,7 @@
 	</div>
 
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 	<script src="js/scripts.js"></script>
 </body>
 </html>
