@@ -1,4 +1,4 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 
 
 
@@ -8,7 +8,20 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="theme-color" content="#fff">
-	<meta name="viewport" content="width=device-width, viewport-fit=cover height=device-height, initial-scale=1.0, user-scalable=no, user-scalable=0"/>
+	<meta name="viewport" content="width=device-width, viewport-fit=cover height=device-height, initial-scale=1.0"/>
+
+	<script>
+		if(navigator.userAgent.indexOf('iPhone') > -1 )
+		{
+		    document
+		      .querySelector("[name=viewport]")
+		      .setAttribute("content","width=device-width, initial-scale=1, maximum-scale=1");
+		}
+	</script>
+
+	<!-- Start cookieyes banner -->
+	<script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/682e62f1c584a595392e874c/script.js"></script>
+	<!-- End cookieyes banner -->
 
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -23,17 +36,6 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5QZZZH6"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-
-	<!-- Sklik retargeting -->
-	<script type="text/javascript" src=https://c.seznam.cz/js/rc.js></script>
-	<script>
-		var retargetingConf = {
-			rtgId: 145463
-		};
-		if (window.rc && window.rc.retargetingHit) {
-			window.rc.retargetingHit(retargetingConf);
-		}
-	</script>
 
 	<meta name="robots" content="index,follow">
 	<title>Úklidové Služby, úklidová firma Praha, úklid Praha, úklid kanceláří, úklid společných prostor | MIVELA úklid</title>
@@ -83,17 +85,21 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300;1,900&display=swap" rel="stylesheet">
+
+	<!-- chatbot -->
+	<script type="text/javascript">
+	  if (!Array.isArray(window.qbOptions)) {
+	    window.qbOptions = []
+	  }
+	  window.qbOptions.push({"baseUrl":"https://bots.sefbot.cz","use":"p6yDjmQ3B9E32lqX/p6yDjmQ0PNb32lqX"});
+
+	</script>
+	<script type="text/javascript" src="https://static.bots.sefbot.cz/website/js/widget2.cf24ddd8.min.js" crossorigin="anonymous" defer data-no-minify="1"></script>
+	<!-- chatbot -->
+
+
 </head>
 <body>
-
-	<!-- Cookie Consent by TermsFeed https://www.TermsFeed.com -->
-		<script type="text/javascript" src="https://www.termsfeed.com/public/cookie-consent/4.1.0/cookie-consent.js" charset="UTF-8"></script>
-		<script type="text/javascript" charset="UTF-8">
-		document.addEventListener('DOMContentLoaded', function () {
-		cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palette":"dark","language":"cs","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_name":"Mivela","website_privacy_policy_url":"https://mivela.cz/gdpr"});
-		});
-		</script>
-	<!-- End Cookie Consent by TermsFeed https://www.TermsFeed.com -->
 
 	<div class="site">
 		
@@ -119,7 +125,7 @@
 					<li><a href="kontakt" title="Kontakty">Kontakty</a></li>
 				</ul>
 			</nav>
-			<button type="button" class="togglenav__button js-nav">
+			<button type="button" class="togglenav__button js-nav" aria-label="Menu">
 				<div class="togglenav__button-burger">
 					<span></span>
 					<span></span>
@@ -283,6 +289,18 @@
                     </div>
                     <img class="tile__bg" src="images/tile-entrance.jpg" alt="entrance" width="650" height="366">
                 </a>
+                <a href="uklid-garazi" class="tile tile--special tile--light">
+                    <div class="tile__inner">
+                        <h3 class="tile__title">ÚKLID GARÁŽÍ</h3>
+                        <div class="tile__text"><span>Naše úklidová firma zajistí profesionální úklidové služby jako úklid garáží.</span>
+                        </div>
+                        <div class="tile__bottom">
+                            <div class="tile__price">od <span>4,5</span> Kč/m2</div>
+                            <div class="btn btn--full btn--medium tile__button ">Detail služby</div>
+                        </div>
+                    </div>
+                    <img class="tile__bg" src="images/garage.jpg" alt="garage" width="650" height="366">
+                </a>
             </div>
             <div class="two-columns__right">
                 <a href="generalni-uklid" class="tile tile--special tile--light">
@@ -409,6 +427,8 @@
 		
 			<option >Čištění čalouněného nábytku</option>
 		
+			<option >Úklid garáží</option>
+		
 			<option >Jiný typ úklidu</option>
 		
 			<option >Dárkový poukaz</option>
@@ -485,7 +505,7 @@
             </div>
             <div class="footer__box">
                 <div class="footer__left">
-                    <p class="footer__text">Copyright © 2021 Mivela s.r.o. <span>Všechna práva vyhrazena</span><span><a href="#" id="open_preferences_center">Spravovat cookies</a></span></p>
+                    <p class="footer__text">Copyright © 2021 Mivela s.r.o. <span>Všechna práva vyhrazena</span></p>
                 </div>
                 <div class="footer__right">
                     <p class="footer__text">webDesign By: <a href="https://pesl.name/" target="_blank" title="Přejít na web">PESL.NAME</a></p>
@@ -515,32 +535,6 @@
 	
 	<script src="js/scripts.min.js"></script>
 
-    <!-- Messenger Plugin chatu Code -->
-        <div id="fb-root"></div>
 
-        <!-- Your Plugin chatu code -->
-        <div id="fb-customer-chat" class="fb-customerchat">
-        </div>
-
-        <script>
-          var chatbox = document.getElementById('fb-customer-chat');
-          chatbox.setAttribute("page_id", "105810088335067");
-          chatbox.setAttribute("attribution", "biz_inbox");
-
-          window.fbAsyncInit = function() {
-            FB.init({
-              xfbml            : true,
-              version          : 'v11.0'
-            });
-          };
-
-          (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = 'https://connect.facebook.net/cs_CZ/sdk/xfbml.customerchat.js';
-            fjs.parentNode.insertBefore(js, fjs);
-          }(document, 'script', 'facebook-jssdk'));
-        </script>
 </body>
 </html>
