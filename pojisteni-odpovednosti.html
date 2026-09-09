@@ -1,4 +1,4 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 
 
 
@@ -8,7 +8,20 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="theme-color" content="#fff">
-	<meta name="viewport" content="width=device-width, viewport-fit=cover height=device-height, initial-scale=1.0, user-scalable=no, user-scalable=0"/>
+	<meta name="viewport" content="width=device-width, viewport-fit=cover height=device-height, initial-scale=1.0"/>
+
+	<script>
+		if(navigator.userAgent.indexOf('iPhone') > -1 )
+		{
+		    document
+		      .querySelector("[name=viewport]")
+		      .setAttribute("content","width=device-width, initial-scale=1, maximum-scale=1");
+		}
+	</script>
+
+	<!-- Start cookieyes banner -->
+	<script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/682e62f1c584a595392e874c/script.js"></script>
+	<!-- End cookieyes banner -->
 
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -17,23 +30,6 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-5QZZZH6');</script>
     <!-- End Google Tag Manager -->
-
-
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5QZZZH6"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
-	<!-- Sklik retargeting -->
-	<script type="text/javascript" src=https://c.seznam.cz/js/rc.js></script>
-	<script>
-		var retargetingConf = {
-			rtgId: 145463
-		};
-		if (window.rc && window.rc.retargetingHit) {
-			window.rc.retargetingHit(retargetingConf);
-		}
-	</script>
 
 	<meta name="robots" content="index,follow">
 	<title>Pojištění odpovědnosti za způsobenou škodu</title>
@@ -75,16 +71,34 @@
 		}
 	</script>
 
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-	<link rel="stylesheet" href="css/style.min.css" type="text/css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.2.0/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/style.min.css?v=16" type="text/css">
 	<link rel="stylesheet" href="css/print.min.css" media="print">
 	<link rel="manifest" href="config/manifest/manifest.json">
 
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300;1,900&display=swap" rel="stylesheet">
+
+  
+  <script type="text/javascript">
+    if (!Array.isArray(window.qbOptions)) {
+      window.qbOptions = []
+    }
+    window.qbOptions.push({"baseUrl":"https://bots.sefbot.cz","use":"p6yDjmQ3B9E32lqX/p6yDjmQ0PNb32lqX"});
+  </script>
+  <script type="text/javascript" src="https://static.bots.sefbot.cz/website/js/widget2.js" crossorigin="anonymous" defer data-no-minify="1" data-cfasync="false"></script>
+  
+
+
 </head>
 <body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5QZZZH6"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
 	<div class="site">
 		
 
@@ -109,7 +123,7 @@
 					<li><a href="kontakt" title="Kontakty">Kontakty</a></li>
 				</ul>
 			</nav>
-			<button type="button" class="togglenav__button js-nav">
+			<button type="button" class="togglenav__button js-nav" aria-label="Menu">
 				<div class="togglenav__button-burger">
 					<span></span>
 					<span></span>
@@ -119,6 +133,39 @@
 		</div>
 	</div>
 </header>
+
+<div class="sticky-header js-sticky-header">
+	<div class="container">
+		<div class="sticky-header__inner">
+			<a class="sticky-header__logo" href="/" title="Mivela"><img src="images/logo.svg" alt="logo" width="130" height="56"></a>
+			<nav class="sticky-header__nav">
+				<ul>
+					<li><a href="o-nas" title="O nás">O nás</a></li>
+					<li><a href="uklidove-sluzby" title="Služby">Služby</a></li>
+					<li><a href="garance" title="Garance">Garance</a></li>
+					<li><a href="reference" title="Reference">Reference</a></li>
+					<li><a href="kariera" title="Kariéra">Kariéra</a></li>
+					<li><a href="kontakt" title="Kontakty">Kontakty</a></li>
+					<li class="sticky-header__cta-item"><a class="btn btn--full sticky-header__cta" href="#form1" title="Poptat úklid">Poptat úklid</a></li>
+				</ul>
+			</nav>
+			<div class="sticky-header__right">
+				<a class="contact-link sticky-header__contact" href="tel:774750753" title="Zavolejte nám!"><img src="images/phone.svg" width="20" height="20" alt="phone">+420 774 750 753</a>
+				<a class="contact-link sticky-header__contact" href="mailto:info@mivela.cz" title="Napište nám!"><img src="images/envelope.svg" width="23" height="19" alt="e-mail">info@mivela.cz</a>
+				<a class="social-icon" href="https://www.facebook.com/mivelauklid/" target="_blank" title="Navštívit nás na Facebooku"><img src="images/facebook.svg" width="19" height="19" alt="facebook"></a>
+				<a class="social-icon" href="https://www.instagram.com/mivelauklid/" target="_blank" title="Navštívit nás na Instagramu"><img src="images/instagram.svg" width="19" height="19" alt="instagram"></a>
+				<a class="social-icon" href="https://www.linkedin.com/company/72462439/admin/" target="_blank" title="Navštívit nás na LinkedInu"><img src="images/linkedin.svg" width="18" height="18" alt="linkedin"></a>
+				<button type="button" class="togglenav__button js-nav" aria-label="Menu">
+					<div class="togglenav__button-burger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
 
 <img class="transparent-wave" src="images/wave-transparent.png" alt="">
 <div class="content-box">
@@ -188,40 +235,25 @@
 	    }
 	</script>
 
-	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@14.2.0/swiper-bundle.min.js"></script>
 	<script src="https://www.google.com/recaptcha/api.js?render=6Le--SUbAAAAAFbwYRj49pMtbv37FdmpnyljN6B7"></script>
 	<script type="text/javascript" src="https://c.seznam.cz/js/rc.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 	
 	
-	<script src="js/scripts.min.js"></script>
+	<script src="js/scripts.min.js?v=15"></script>
 
-    <!-- Messenger Plugin chatu Code -->
-        <div id="fb-root"></div>
+  <div id="glightbox-modal-3" hidden>
+  	<div class="modal">
+  		<button class="modal__close js-close-lightbox"><img src="images/close.svg" alt="close" width="20" height="20"></button>
+      <svg xmlns="http://www.w3.org/2000/svg" width="134" height="100" viewBox="0 0 134 100" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M60.6564 95.4392C54.5813 101.52 44.7239 101.52 38.651 95.4392L4.55635 61.3113C-1.51878 55.2325 -1.51878 45.3654 4.55635 39.2877C10.6292 33.2067 20.4867 33.2067 26.5617 39.2877L46.875 59.6186C48.4087 61.1504 50.8977 61.1504 52.4347 59.6186L107.438 4.5608C113.511 -1.52027 123.368 -1.52027 129.443 4.5608C132.361 7.48145 134 11.4427 134 15.5725C134 19.7023 132.361 23.6647 129.443 26.5842L60.6564 95.4392Z" fill="#26A37A"/>
+      </svg>
+  		<h1>Dobrá <b>zpráva</b></h1>
+  		<p class="modal__large">Formulář byl úspěšně odeslán. <br>Nejpozději do dvou pracovních dní Vás budeme <br>kontaktovat.</p>
+          <p>Hezký den přeje tým Mivela</p>
+  	</div>
+  </div>
 
-        <!-- Your Plugin chatu code -->
-        <div id="fb-customer-chat" class="fb-customerchat">
-        </div>
-
-        <script>
-          var chatbox = document.getElementById('fb-customer-chat');
-          chatbox.setAttribute("page_id", "105810088335067");
-          chatbox.setAttribute("attribution", "biz_inbox");
-
-          window.fbAsyncInit = function() {
-            FB.init({
-              xfbml            : true,
-              version          : 'v11.0'
-            });
-          };
-
-          (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = 'https://connect.facebook.net/cs_CZ/sdk/xfbml.customerchat.js';
-            fjs.parentNode.insertBefore(js, fjs);
-          }(document, 'script', 'facebook-jssdk'));
-        </script>
 </body>
 </html>

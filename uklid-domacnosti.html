@@ -1,4 +1,4 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 
 
 
@@ -8,7 +8,20 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="theme-color" content="#fff">
-	<meta name="viewport" content="width=device-width, viewport-fit=cover height=device-height, initial-scale=1.0, user-scalable=no, user-scalable=0"/>
+	<meta name="viewport" content="width=device-width, viewport-fit=cover height=device-height, initial-scale=1.0"/>
+
+	<script>
+		if(navigator.userAgent.indexOf('iPhone') > -1 )
+		{
+		    document
+		      .querySelector("[name=viewport]")
+		      .setAttribute("content","width=device-width, initial-scale=1, maximum-scale=1");
+		}
+	</script>
+
+	<!-- Start cookieyes banner -->
+	<script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/682e62f1c584a595392e874c/script.js"></script>
+	<!-- End cookieyes banner -->
 
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -17,23 +30,6 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-5QZZZH6');</script>
     <!-- End Google Tag Manager -->
-
-
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5QZZZH6"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
-	<!-- Sklik retargeting -->
-	<script type="text/javascript" src=https://c.seznam.cz/js/rc.js></script>
-	<script>
-		var retargetingConf = {
-			rtgId: 145463
-		};
-		if (window.rc && window.rc.retargetingHit) {
-			window.rc.retargetingHit(retargetingConf);
-		}
-	</script>
 
 	<meta name="robots" content="index,follow">
 	<title>Úklid domácnosti Praha a Střední Čechy | MIVELA úklid</title>
@@ -75,19 +71,36 @@
 		}
 	</script>
 
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-	<link rel="stylesheet" href="css/style.min.css" type="text/css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.2.0/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/style.min.css?v=16" type="text/css">
 	<link rel="stylesheet" href="css/print.min.css" media="print">
 	<link rel="manifest" href="config/manifest/manifest.json">
 
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300;1,900&display=swap" rel="stylesheet">
+
+  
+  <script type="text/javascript">
+    if (!Array.isArray(window.qbOptions)) {
+      window.qbOptions = []
+    }
+    window.qbOptions.push({"baseUrl":"https://bots.sefbot.cz","use":"p6yDjmQ3B9E32lqX/p6yDjmQ0PNb32lqX"});
+  </script>
+  <script type="text/javascript" src="https://static.bots.sefbot.cz/website/js/widget2.js" crossorigin="anonymous" defer data-no-minify="1" data-cfasync="false"></script>
+  
+
+
 </head>
 <body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5QZZZH6"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
 	<div class="site">
 		
-
 <header class="header">
 	<div class="container">
 		<div class="header__top">
@@ -109,7 +122,7 @@
 					<li><a href="kontakt" title="Kontakty">Kontakty</a></li>
 				</ul>
 			</nav>
-			<button type="button" class="togglenav__button js-nav">
+			<button type="button" class="togglenav__button js-nav" aria-label="Menu">
 				<div class="togglenav__button-burger">
 					<span></span>
 					<span></span>
@@ -120,64 +133,94 @@
 	</div>
 </header>
 
+<div class="sticky-header js-sticky-header">
+	<div class="container">
+		<div class="sticky-header__inner">
+			<a class="sticky-header__logo" href="/" title="Mivela"><img src="images/logo.svg" alt="logo" width="130" height="56"></a>
+			<nav class="sticky-header__nav">
+				<ul>
+					<li><a href="o-nas" title="O nás">O nás</a></li>
+					<li><a href="uklidove-sluzby" title="Služby">Služby</a></li>
+					<li><a href="garance" title="Garance">Garance</a></li>
+					<li><a href="reference" title="Reference">Reference</a></li>
+					<li><a href="kariera" title="Kariéra">Kariéra</a></li>
+					<li><a href="kontakt" title="Kontakty">Kontakty</a></li>
+					<li class="sticky-header__cta-item"><a class="btn btn--full sticky-header__cta" href="#form1" title="Poptat úklid">Poptat úklid</a></li>
+				</ul>
+			</nav>
+			<div class="sticky-header__right">
+				<a class="contact-link sticky-header__contact" href="tel:774750753" title="Zavolejte nám!"><img src="images/phone.svg" width="20" height="20" alt="phone">+420 774 750 753</a>
+				<a class="contact-link sticky-header__contact" href="mailto:info@mivela.cz" title="Napište nám!"><img src="images/envelope.svg" width="23" height="19" alt="e-mail">info@mivela.cz</a>
+				<a class="social-icon" href="https://www.facebook.com/mivelauklid/" target="_blank" title="Navštívit nás na Facebooku"><img src="images/facebook.svg" width="19" height="19" alt="facebook"></a>
+				<a class="social-icon" href="https://www.instagram.com/mivelauklid/" target="_blank" title="Navštívit nás na Instagramu"><img src="images/instagram.svg" width="19" height="19" alt="instagram"></a>
+				<a class="social-icon" href="https://www.linkedin.com/company/72462439/admin/" target="_blank" title="Navštívit nás na LinkedInu"><img src="images/linkedin.svg" width="18" height="18" alt="linkedin"></a>
+				<button type="button" class="togglenav__button js-nav" aria-label="Menu">
+					<div class="togglenav__button-burger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
 <img class="transparent-wave" src="images/wave-transparent.png" alt="">
-<div class="jumbo jumbo--services jumbo--home">
+<div class="jumbo jumbo--services jumbo--home jumbo--household">
     <img class="jumbo__services" src="images/jumbo-home.jpg" width="2000" height="1100"  alt="">
     <div class="container">
         <div class="jumbo__box">
-            <h1>Úklid <b>domácnosti</b><span> Pravidelné a jednorázové úklidové služby</span></h1>
+            <h1>Úklid <b>domácnosti</b><span> Jednorázové a pravidelné úklidové služby</span></h1>
             <div class="jumbo__block">
-                <p>
-                    <b>Úklid domácností Praha</b> a Středočeský kraj je našimi klienty velmi oceňovaná služba zejména pro odvedenou kvalitu úklidu a v nemenší míře zejména pro diskrétnost a spolehlivost našeho úklidového personálu. <b>Úklid domácností</b> provádíme jako <b>pravidelný úklid domácností, jednorázový úklid domácností</b> a/nebo <b>generální úklid domácností</b>. Naše <b>úklidy domácností</b> se odlišují kromě zmiňované kvality a diskrétnosti zejména v profesionální komunikaci, rychlé přípravě nabídky, bezprostředním zahájení jednotlivých prací, zohledněním specifických potřeb klientů a unikátnímu, důslednému systému zpětné kontroly.
-
-                </p>
+                <p>Úklid domácností Praha a Středočeský kraj je našimi klienty velmi oceňovaná služba zejména pro odvedenou kvalitu úklidu a v nemenší míře zejména pro diskrétnost a spolehlivost našeho úklidového personálu.</p>
             </div>
         </div>
     </div>
 </div>
 
-<div class="wave-block wave-block--services">
-    <div class="wave-block__wrapper wave-block__wrapper--sub">
+<div class="wave-block wave-block--services wave-block--household">
+    <div class="wave-block__wrapper">
         <div class="container">
-            <h2>Mohlo by vás <strong>zajímat</strong></h2>
-            <p class="subtitle">Úklid domácnosti od Mively</p>
-            <p class="wave-block__text wave-block__text--sub">Náš dům, byt, chalupa nebo chata je naším nejintimnějším prostorem, do kterého jen velmi neradi pouštíme kohokoliv cizího. My v Mivela úklid jsme si toho plně vědomi a proto dbáme na důkladný výběr toho pravého úklidového pracovníka, jeho spolehlivost, důvěryhodnost a diskrétnost. Důležitou roli samozřejmě hrají i osobní sympatie. Proto Vám úklidového pracovníka představíme a jeho schválení necháme na Vašem rozhodnutí.
-</p>
-<p class="wave-block__text wave-block__text--left">Do Vaší domácnosti přijedeme připraveni, přesně podle Vašich individuálních, specifických požadavků, moderním vybavením a profesionálními, k životnímu prostředí šetrnými, úklidovými prostředky ideálními na jednotlivé konkrétní plochy a povrchy. Úklidové služby domluvíme na osobní schůzce přesně podle Vašich potřeb. O Vaši domácnost se bude starat stálý a řádně proškolený úklidový pracovník.
-</p>
-<p class="wave-block__bold"><span>od</span> 1.500 Kč</p>
+            <div class="choice">
+                <h2>Jaký úklid <strong>potřebujete?</strong></h2>
+                <p class="subtitle">Vyberte si variantu, která vám nejlépe vyhovuje….</p>
+                <div class="choice__grid">
+                    <div class="choice__card">
+                        <img class="choice__icon" src="images/type1.svg" width="75" height="80" alt="">
+                        <h3 class="choice__title">Jednorázový úklid</h3>
+                        <p class="choice__desc">Potřebujete domácnost uklidit jednorázově?</p>
+                        <ul class="choice__list">
+                            <li>Úklid po stěhování</li>
+                            <li>Úklid po malování</li>
+                            <li>Jarní úklid</li>
+                            <li>Mytí oken</li>
+                            <li>Hloubkový úklid koupelny a kuchyně</li>
+                        </ul>
+                        <a href="jednorazovy-uklid" class="btn btn--full choice__btn">Zobrazit detail</a>
+                    </div>
+                    <div class="choice__card">
+                        <img class="choice__icon" src="images/type2.svg" width="70" height="85" alt="">
+                        <h3 class="choice__title">Pravidelný úklid</h3>
+                        <p class="choice__desc">Chcete mít doma pravidelně uklizeno bez starostí?</p>
+                        <ul class="choice__list">
+                            <li>Pravidelný úklid 1x týdně</li>
+                            <li>Pravidelný úklid 1x za 14 dní</li>
+                            <li>Pravidelný úklid 1x měsíčně</li>
+                        </ul>
+                        <a href="#" class="btn btn--full choice__btn">Zobrazit detail</a>
+                    </div>
+                </div>
+                <p class="choice__info"><img src="images/info-new.svg" width="30" height="30" alt=""><span>Rozsah úklidu přizpůsobíme Vaší domácnosti. Máte specifické požadavky. Rádi se domluvíme.</span></p>
+            </div>
         </div>
     </div>
 </div>
 
-<div class="top-wave-wrapper top-wave-wrapper--sub">
-    <img class="top-wave" src="images/services-sub.svg" width="2020" alt="">
-    <div class="container">
-        <h2>Pravidelný <strong>úklid</strong></h2>
-        <p class="subtitle">Co může pravidelný úklid obsahovat:</p>
-    <div class="sub-strip sub-strip--simple">
-        <div class="sub-strip__left">
-            <ul>
-                <li>mytí podlah a luxování koberců</li>
-                <li>utírání stolů, skříněk, poliček a parapetů od prachu, otisků a dalších nečistot</li>
-                <li>vysypání odpadkových košů, výměna sáčků dle potřeby, třídění odpadu</li>
-                <li>mytí a čištění lustrů a ostatních svítidel</li>
-                <li>naskládání nádobí do myčky a po umytí vrácení zpět do skříněk</li>
-                <li><a href="https://mivela.cz/myti-oken" title="mytí oken">mytí oken</a>, včetně rámů, parapetů a žaluzií</li>
-                <li>umytí kuchyně včetně kuchyňských spotřebičů (lednice, mikrovlnné trouby atp.)</li>
-                <li>umytí koupelny, umyvadla, WC mísy, sprchového koutu včetně dezinfekce</li>
-                <li>leštění zrcadel a skleněných ploch</li>
-                <li>žehlení prádla</li>
-            </ul>
-        </div>
-    </div>
-        <p class="top-wave-wrapper__text"><b>Konkrétní specifikaci úklidových prací Vám rádi sestavíme individuálně přesně dle Vašeho požadavku.</b></p>
-    </div>
+<div class="top-wave-wrapper">
+    <img class="top-wave" src="images/references-bg.svg" width="2020" alt="">
 </div>
 
-<div class="contact contact--sub">
-	
-		<img class="bottom-wave" src="images/sub-bottom.png" width="2000" height="497" alt="">
+<div class="contact contact--about">
 	
 
     <div class="container">
@@ -254,6 +297,8 @@
 		
 			<option >Čištění čalouněného nábytku</option>
 		
+			<option >Úklid garáží</option>
+		
 			<option >Jiný typ úklidu</option>
 		
 			<option >Dárkový poukaz</option>
@@ -290,7 +335,6 @@
         </div>
     </div>
 </div>
-
 
 <footer class="footer">
     <div class="footer__wrapper">
@@ -341,7 +385,6 @@
 </footer>
 
 
-
 	</div>
 
 	<script type="text/javascript" src="https://secure.smartform.cz/api/v1/smartform.js" async></script>
@@ -352,40 +395,25 @@
 	    }
 	</script>
 
-	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@14.2.0/swiper-bundle.min.js"></script>
 	<script src="https://www.google.com/recaptcha/api.js?render=6Le--SUbAAAAAFbwYRj49pMtbv37FdmpnyljN6B7"></script>
 	<script type="text/javascript" src="https://c.seznam.cz/js/rc.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 	
 	
-	<script src="js/scripts.min.js"></script>
+	<script src="js/scripts.min.js?v=15"></script>
 
-    <!-- Messenger Plugin chatu Code -->
-        <div id="fb-root"></div>
+  <div id="glightbox-modal-3" hidden>
+  	<div class="modal">
+  		<button class="modal__close js-close-lightbox"><img src="images/close.svg" alt="close" width="20" height="20"></button>
+      <svg xmlns="http://www.w3.org/2000/svg" width="134" height="100" viewBox="0 0 134 100" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M60.6564 95.4392C54.5813 101.52 44.7239 101.52 38.651 95.4392L4.55635 61.3113C-1.51878 55.2325 -1.51878 45.3654 4.55635 39.2877C10.6292 33.2067 20.4867 33.2067 26.5617 39.2877L46.875 59.6186C48.4087 61.1504 50.8977 61.1504 52.4347 59.6186L107.438 4.5608C113.511 -1.52027 123.368 -1.52027 129.443 4.5608C132.361 7.48145 134 11.4427 134 15.5725C134 19.7023 132.361 23.6647 129.443 26.5842L60.6564 95.4392Z" fill="#26A37A"/>
+      </svg>
+  		<h1>Dobrá <b>zpráva</b></h1>
+  		<p class="modal__large">Formulář byl úspěšně odeslán. <br>Nejpozději do dvou pracovních dní Vás budeme <br>kontaktovat.</p>
+          <p>Hezký den přeje tým Mivela</p>
+  	</div>
+  </div>
 
-        <!-- Your Plugin chatu code -->
-        <div id="fb-customer-chat" class="fb-customerchat">
-        </div>
-
-        <script>
-          var chatbox = document.getElementById('fb-customer-chat');
-          chatbox.setAttribute("page_id", "105810088335067");
-          chatbox.setAttribute("attribution", "biz_inbox");
-
-          window.fbAsyncInit = function() {
-            FB.init({
-              xfbml            : true,
-              version          : 'v11.0'
-            });
-          };
-
-          (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = 'https://connect.facebook.net/cs_CZ/sdk/xfbml.customerchat.js';
-            fjs.parentNode.insertBefore(js, fjs);
-          }(document, 'script', 'facebook-jssdk'));
-        </script>
 </body>
 </html>
